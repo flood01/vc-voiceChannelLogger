@@ -1,3 +1,3 @@
-Tracks joins, moves, leaves in voice call.
+Tracks joins, moves, leaves in a voice call using Vencord.
 
 Made with AI
