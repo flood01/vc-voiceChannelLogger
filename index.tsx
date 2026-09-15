@@ -214,7 +214,22 @@ function LogModal({ modalProps }: { modalProps: ModalProps; }) {
                 <ModalCloseButton onClick={modalProps.onClose} />
             </ModalHeader>
             <ModalContent>
-                <div style={{ padding: "12px 0", maxHeight: "65vh", overflowY: "auto" }}>
+                <style>{`
+                    .vc-log-scroll::-webkit-scrollbar {
+                        width: 6px;
+                    }
+                    .vc-log-scroll::-webkit-scrollbar-track {
+                        background: transparent;
+                    }
+                    .vc-log-scroll::-webkit-scrollbar-thumb {
+                        background-color: rgba(255, 255, 255, 0.25);
+                        border-radius: 4px;
+                    }
+                    .vc-log-scroll::-webkit-scrollbar-thumb:hover {
+                        background-color: rgba(255, 255, 255, 0.4);
+                    }
+                `}</style>
+                <div className="vc-log-scroll" style={{ padding: "12px 0", maxHeight: "65vh", overflowY: "auto" }}>
                     {entries.length === 0 ? (
                         <div style={{ fontSize: 15, color: "#ffffff", padding: "8px 2px" }}>
                             No joins, leaves, or moves yet this call.
