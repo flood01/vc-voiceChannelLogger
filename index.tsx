@@ -268,7 +268,7 @@ const ToolbarIconSafe = ErrorBoundary.wrap(ToolbarIcon, { noop: true });
 export default definePlugin({
     name: "VoiceChannelLogger",
     description: "Toolbar icon showing who joined/left/moved from the voice channel you're currently in, with clickable profiles.",
-    authors: [{ name: "mar", id: 1531845646842073301n }],
+    authors: [{ name: "flood235", id: 1531845646842073301n }],
 
     patches: [
         {
